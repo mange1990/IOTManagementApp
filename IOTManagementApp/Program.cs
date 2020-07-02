@@ -17,7 +17,7 @@ namespace IOTManagementApp
         public static void Main(string[] args)
         {
             var host = CreateHostBuilder(args).Build();
-
+            /*
             using (var scope = host.Services.CreateScope())
             {
                 var services = scope.ServiceProvider;
@@ -34,7 +34,7 @@ namespace IOTManagementApp
                     var logger = services.GetRequiredService<ILogger<Program>>();
                     logger.LogError(ex.Message, "Seed fail");
                 }
-            }
+            }*/
 
             host.Run();
 
