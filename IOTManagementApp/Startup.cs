@@ -31,9 +31,9 @@ namespace IOTManagementApp
         //    services.AddDbContext<ApplicationDbContext>(options =>
           //      options.UseSqlServer(
            //         Configuration.GetConnectionString("DefaultConnection")));
-            services.AddDefaultIdentity<User>(options => options.SignIn.RequireConfirmedAccount = false)
-                .AddRoles<IdentityRole>()
-                .AddEntityFrameworkStores<ApplicationDbContext>();
+          //  services.AddDefaultIdentity<User>(options => options.SignIn.RequireConfirmedAccount = false)
+               // .AddRoles<IdentityRole>()
+             //   .AddEntityFrameworkStores<ApplicationDbContext>();
             services.AddRazorPages();
             services.AddMvc();
             services.AddControllersWithViews();
