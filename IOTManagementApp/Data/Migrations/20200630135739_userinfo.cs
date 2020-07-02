@@ -11,7 +11,7 @@ namespace IOTManagementApp.Data.Migrations
             migrationBuilder.AddColumn<int>(
                 name: "ChangePassword",
                 table: "AspNetUsers",
-                nullable: false,
+                nullable: true,
                 defaultValue: 1);
 
             migrationBuilder.AddColumn<string>(

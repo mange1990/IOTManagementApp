@@ -8,15 +8,12 @@ namespace IOTManagementApp.Models
 {
     public class User : IdentityUser
     {
-        public User()
-        {
-            this.ChangePassword = 1;
-        }
+       
 
         public string FirstName { get; set; }
         public string LastName { get; set; }
 
-        public int ChangePassword { get; set; }
+        public int ChangePassword { get; set; } = 1;
         public IEnumerable<Device> Devices { get; set; }
     }
 }
