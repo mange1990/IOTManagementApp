@@ -35,7 +35,7 @@ namespace IOTManagementApp.Data
 
         public static async Task IntializeAsync(IServiceProvider service)
         {
-            var options = service.GetRequiredService<DbContextOptions<ApplicationDbContext>>();
+        /*    var options = service.GetRequiredService<DbContextOptions<ApplicationDbContext>>();
             using (var context = new ApplicationDbContext(options))
             {
 
@@ -51,7 +51,7 @@ namespace IOTManagementApp.Data
 
                 await SeedAdmin(userManager, roleManager, roleNames, adminEmail, adminPassword);
             }
-            
+            */
         }
 
         private static async Task SeedRoles(RoleManager<IdentityRole> roleManager, string[] roleNames) {

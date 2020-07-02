@@ -21,7 +21,7 @@ namespace IOTManagementApp.Controllers
         private readonly ILogger<OverviewController> _logger;
 
        
-        //K
+        
         public OverviewController(ILogger<OverviewController> logger, UserManager<User> userManager, ApplicationDbContext context)
         {
             _context = context;
@@ -29,7 +29,12 @@ namespace IOTManagementApp.Controllers
             _logger = logger;
         }
 
-        public IActionResult Index()
+        public string index()
+        {
+            return "Hej";
+        }
+
+        public IActionResult Index2()
         {
             return View(SeedData.devices);
         }
