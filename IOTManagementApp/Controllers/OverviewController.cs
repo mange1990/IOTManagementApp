@@ -21,7 +21,7 @@ namespace IOTManagementApp.Controllers
         private readonly ILogger<OverviewController> _logger;
 
        
-        //Kommentar
+        //K
         public OverviewController(ILogger<OverviewController> logger, UserManager<User> userManager, ApplicationDbContext context)
         {
             _context = context;
