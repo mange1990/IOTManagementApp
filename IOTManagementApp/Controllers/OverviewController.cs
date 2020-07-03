@@ -13,19 +13,19 @@ using Microsoft.EntityFrameworkCore;
 
 namespace IOTManagementApp.Controllers
 {
-    [Authorize]
+
     public class OverviewController : Controller
     {
-        private readonly ApplicationDbContext _context;
-        private readonly UserManager<User> _userManager;
+     //   private readonly ApplicationDbContext _context;
+   //     private readonly UserManager<User> _userManager;
         private readonly ILogger<OverviewController> _logger;
 
        
         
-        public OverviewController(ILogger<OverviewController> logger, UserManager<User> userManager, ApplicationDbContext context)
+        public OverviewController(ILogger<OverviewController> logger)
         {
-            _context = context;
-            _userManager = userManager;
+         //   _context = context;
+         //   _userManager = userManager;
             _logger = logger;
         }
 
@@ -38,7 +38,7 @@ namespace IOTManagementApp.Controllers
         {
             return View(SeedData.devices);
         }
-
+        /*
         public IActionResult ConnectToggle(int? id)
         {
             if (id is null) return NotFound();
@@ -73,5 +73,6 @@ namespace IOTManagementApp.Controllers
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
+        */
     }
 }
