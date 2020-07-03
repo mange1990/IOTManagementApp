@@ -51,7 +51,7 @@ namespace IOTManagementApp.Data
 
                 await SeedAdmin(userManager, roleManager, roleNames, adminEmail, adminPassword);
             }
-            */
+            */  
         }
 
         private static async Task SeedRoles(RoleManager<IdentityRole> roleManager, string[] roleNames) {
